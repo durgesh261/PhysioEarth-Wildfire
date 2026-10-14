@@ -1,9 +1,12 @@
 # TopoCollapse: Quantifying Manifold Degeneracy and Tail-Loss in Recursive Generative AI via Persistent Homology
 
+[![Live Demo](https://img.shields.io/badge/Demo-Interactive%20Dashboard-brightgreen.svg)](https://durgesh261.github.io/TopoCollapse/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TDA: Ripser](https://img.shields.io/badge/TDA-Ripser%20%7C%20Persim-orange.svg)](https://ripser.scikit-tda.org/)
 [![Topic: Generative AI](https://img.shields.io/badge/Research-Model%20Autophagy%20%26%20Collapse-purple.svg)](https://www.nature.com/articles/s41586-024-07566-y)
+
+> 🌐 **Interactive Demo:** Experience the manifold collapse simulation live in your browser: [https://durgesh261.github.io/TopoCollapse/](https://durgesh261.github.io/TopoCollapse/)
 
 > **Research Premise:** When generative models are trained recursively on synthetic data ($Gen_0 \to Gen_1 \dots \to Gen_K$), their distributions experience **Model Collapse (Autophagy)**. Standard Gaussian moment distances (such as Fréchet Inception Distance / FID) fail to detect geometric cavity erosion in early generations. **TopoCollapse** introduces a Vietoris-Rips Persistent Homology framework that diagnoses topological feature atrophy and tail diversity loss before distribution metrics trigger alarms.
 
