@@ -1,12 +1,12 @@
 # PhysioEarth-Wildfire: Physics-Constrained Fourier Neural Operator for Wildfire Spread & Topographic Conservation
 
-[![Live Demo](https://img.shields.io/badge/Demo-Interactive%20Digital%20Twin-brightgreen.svg)](https://durgesh261.github.io/TopoCollapse/)
+[![Live Demo](https://img.shields.io/badge/Demo-Interactive%20Digital%20Twin-brightgreen.svg)](https://durgesh261.github.io/PhysioEarth-Wildfire/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Framework: PyTorch](https://img.shields.io/badge/PyTorch-SciML%20%7C%20FNO-red.svg)](https://pytorch.org/)
 [![UN SDG: 13 Climate Action](https://img.shields.io/badge/UN%20SDG-13%20Climate%20Action-darkgreen.svg)](https://sdgs.un.org/goals/goal13)
 
-> 🌐 **Live Interactive Digital Twin:** Test the wildfire simulation live in your browser: [https://durgesh261.github.io/TopoCollapse/](https://durgesh261.github.io/TopoCollapse/)
+> 🌐 **Live Interactive Digital Twin:** Test the wildfire simulation live in your browser: [https://durgesh261.github.io/PhysioEarth-Wildfire/](https://durgesh261.github.io/PhysioEarth-Wildfire/)
 
 > **Research Premise:** Wildfires destroy over 10 million hectares globally each year. Traditional numerical PDE models (such as WRF-SFIRE) require hours on supercomputers, preventing real-time evacuation planning. Conversely, standard unconstrained deep learning vision models (such as 2D U-Nets) produce severe physical hallucinations—spontaneously regenerating fuel and leaking fire across water bodies. **PhysioEarth** introduces a 2D Fourier Neural Operator (FNO) that enforces physical conservation laws and Rothermel rate-of-spread dynamics directly in the spectral frequency domain.
 
@@ -92,26 +92,33 @@ Project_DataScience/
 ### 1. Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/durgesh261/TopoCollapse.git
-cd TopoCollapse
+git clone https://github.com/durgesh261/PhysioEarth-Wildfire.git
+cd PhysioEarth-Wildfire
 pip install -r requirements.txt
 ```
 
-### 2. Run Automated Unit Tests
+### 2. Run Complete System Verification
+Execute the automated end-to-end verification script:
+```bash
+python verify_project.py
+```
+*Runs all 6 checkpoints: PyTorch FFT backend, reaction-diffusion physics, FNO resolution invariance, physics losses, unit tests, and dashboard data integrity.*
+
+### 3. Run Automated Unit Tests
 Verify all physical conservation laws, Rothermel equations, and spectral Fourier layers:
 ```bash
 pytest
 ```
 *Output: `9 passed in 4.86s` (100% test coverage across physics, models, and metrics).*
 
-### 3. Run the Benchmark Experiment
+### 4. Run the Benchmark Experiment
 Train both PC-FNO and Baseline U-Net and evaluate multi-step rollouts:
 ```bash
 python experiments/run_benchmark.py
 ```
 Outputs appear in `experiments/results/`.
 
-### 4. Launch the Interactive Digital Twin
+### 5. Launch the Interactive Digital Twin
 Launch the local web dashboard:
 ```bash
 python dashboard/serve.py
