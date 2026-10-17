@@ -1,0 +1,4 @@
+Model,Temp_RMSE,Fuel_RMSE,Burned_IoU,PVR_Total_Pct,Fuel_Regen_Pct,Firebreak_Breach_Pct,Latency_ms,Speedup
+Numerical PDE Solver (Ground Truth),0.0,0.0,1.0,0.0,0.0,0.0,5.71,1.0x (Baseline)
+Baseline 2D U-Net (Unconstrained),0.511,0.2709,0.1778,27.02,44.25,16.55,123.09,0.0x
+PhysioEarth PC-FNO (Ours),0.3103,0.3015,0.0141,22.57,46.53,0.98,157.34,0.0x
