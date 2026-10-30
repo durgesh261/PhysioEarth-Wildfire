@@ -52,7 +52,7 @@ $$\mathbf{v}_{\text{eff}} = c_{\text{wind}} \mathbf{w} + c_{\text{slope}} \nabla
 ## 🛠️ Repository Architecture
 
 ```
-Project_DataScience/
+PhysioEarth-Wildfire/
 ├── README.md                          <- Scientific documentation & benchmark results
 ├── pyproject.toml                     <- Package configuration
 ├── requirements.txt                   <- Core dependencies

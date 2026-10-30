@@ -12,7 +12,7 @@ Place this under **Projects** or **Research Experience** on your academic CV:
 > * Formulated a 2D Fourier Neural Operator (FNO) integrating Rothermel's surface fire spread physics and reaction-diffusion combustion dynamics over complex digital elevation models.
 > * Engineered a hybrid physics-informed loss function that mathematically penalizes unphysical fuel regeneration ($\partial Y / \partial t \le 0$) and natural barrier penetration.
 > * Demonstrated a **39% reduction in temperature field RMSE** (0.3103 vs. 0.5110) and eliminated river barrier breaches (**0.98% vs. 16.55%**) compared to standard unconstrained 2D U-Nets across multi-step autoregressive rollouts.
-> * Developed an open-source framework with 100% test coverage (`pytest`) and an interactive 60 FPS disaster digital twin web dashboard. [Code & Demo: GitHub Link]
+> * Developed an open-source framework with 100% test coverage (`pytest`) and an interactive 60 FPS disaster digital twin web dashboard: [Code: github.com/durgesh261/PhysioEarth-Wildfire](https://github.com/durgesh261/PhysioEarth-Wildfire) | [Demo: durgesh261.github.io/PhysioEarth-Wildfire](https://durgesh261.github.io/PhysioEarth-Wildfire/)
 
 ### Format B (For MS in Computational Science / Applied Math):
 > **Spectral Neural Operators for Non-Linear Reaction-Diffusion Combustion Dynamics** | *Partial Differential Equations, SciML*
