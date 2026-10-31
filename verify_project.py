@@ -113,7 +113,6 @@ def check_dashboard_and_artifacts():
         "dashboard/styles.css",
         "dashboard/app.js",
         "dashboard/data.json",
-        "dashboard/paper.html",
         "dashboard/docs.html",
         "experiments/results/benchmark_metrics.csv",
         "experiments/results/figure1_wildfire_spread_comparison.png",
@@ -156,7 +155,6 @@ def main():
     print("=" * 80)
     print(" -> Public Repository : https://github.com/durgesh261/PhysioEarth-Wildfire")
     print(" -> Live Digital Twin : https://durgesh261.github.io/PhysioEarth-Wildfire/")
-    print(" -> Research Paper    : https://durgesh261.github.io/PhysioEarth-Wildfire/paper.html")
     print(" -> Documentation     : https://durgesh261.github.io/PhysioEarth-Wildfire/docs.html")
     print("=" * 80)
 

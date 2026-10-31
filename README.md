@@ -76,7 +76,6 @@ PhysioEarth-Wildfire/
 │   ├── index.html                     <- Modern dark-mode interface
 │   ├── styles.css                     <- Glassmorphic responsive styling
 │   ├── app.js                         <- Real-time 60 FPS Canvas rendering
-│   ├── paper.html                     <- Full research paper reader
 │   ├── docs.html                      <- Comprehensive framework documentation
 │   └── serve.py                       <- Local HTTP server runner
 └── tests/
